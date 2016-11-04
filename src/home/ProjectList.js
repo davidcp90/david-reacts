@@ -1,22 +1,19 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router'
 class ProjectList extends Component {
   render() {
     return (
-      <section className="section">
-      <div className="container has-text-centered columns">
-      <nav className="panel column is-half-desktop is-offset-one-quarter-desktop is-12-mobile">
-      <p className="panel-heading title is-2">
+      <nav className="panel column is-half-desktop is-offset-one-quarter-desktop is-12-mobile is-paddingless ">
+      <p className="panel-heading title is-2 has-text-centered">
       Projects
       </p>
-      <a className="panel-block is-active" href="#">
+      <Link to="/tictactoe" className="panel-block is-active">
       <span className="panel-icon">
-      <i className="fa fa-book"></i>
+      <i className="fa fa-table"></i>
       </span>
-      bulma-website
-      </a>
+      Tic tac toe
+      </Link>
       </nav>
-      </div>
-      </section>
       );
   }
 }
